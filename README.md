@@ -29,7 +29,7 @@ To detect early signs of potential churn, one must first develop a holistic view
 **Libraries:** sklearn, Matplotlib, pandas, seaborn, and NumPy
 
 * Final confusion matrix we got:
-<img src= "https://github.com/Pradnya1208/Telecom-Customer-Churn-prediction/blob/main/output/confusion%20matrix.PNG?raw=true" width = "425" />
+<img src= "final_conf_matrix.png" width = "425" />
 
 >From the confusion matrix we can see that: There are total 1383+166=1549 actual non-churn values and the algorithm predicts 1400 of them as non churn and 149 of them as churn. While there are 280+280=561 actual churn values and the algorithm predicts 280 of them as non churn values and 281 of them as churn values.
 
