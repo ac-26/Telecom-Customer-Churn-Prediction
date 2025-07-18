@@ -101,7 +101,7 @@ The dataset contains **7,043 customer records** with **21 features** covering:
 ### Individual Model Comparison
 | Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
 |-------|----------|-----------|--------|----------|---------|
-| Ensemble | 84.2% | 82.7% | 79.3% | 80.9% | **0.892** |
+| Ensemble | 84.2% | 82.7% | 79.3% | 80.9% | **0.842** |
 | XGBoost | 83.1% | 81.2% | 78.5% | 79.8% | 0.885 |
 | Random Forest | 82.4% | 80.8% | 77.2% | 78.9% | 0.879 |
 | LightGBM | 81.9% | 79.7% | 76.8% | 78.2% | 0.876 |
