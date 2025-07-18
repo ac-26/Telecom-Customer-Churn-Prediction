@@ -129,12 +129,6 @@ The dataset contains **7,043 customer records** with **21 features** covering:
 
 ## 💰 Business Impact
 
-### Projected Savings
-- **Annual Retention Value:** $2.3M through targeted intervention campaigns
-- **Customer Identification Accuracy:** 89.2% precision in high-risk customer detection
-- **ROI on Retention Campaigns:** 4.2x return on investment
-- **Operational Efficiency:** 35% reduction in unnecessary retention spend
-
 ### Strategic Value
 - **Proactive Approach:** Shift from reactive to predictive customer management
 - **Resource Optimization:** Focus retention efforts on customers most likely to respond
