@@ -2,6 +2,10 @@
 
 A comprehensive data science project to predict customer churn in the telecommunications industry using advanced data science techniques and ensemble modeling approaches.
 
+## **As taught during our training I have publicly deployed my full model on streamlit. Please do access it first and check it out.**
+[Streamlit Publicly Deployed APP](https://arnavchopra-ct-csi-ds-4264-telecom-churn.streamlit.app/)
+
+
 ## 📊 Project Overview
 
 Customer churn is a critical business metric for telecommunications companies. This project implements an end-to-end machine learning pipeline to predict which customers are likely to discontinue their services, enabling proactive retention strategies and significant cost savings.
