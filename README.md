@@ -192,7 +192,7 @@ pytest>=6.2.0
 
 For questions, collaboration, or business inquiries:
 - **Email:** arnavchopra2607@gmail.com
-- **LinkedIn:** [My LinkedIn](linkedin.com/in/arnavc26)
+- **LinkedIn:** [My LinkedIn](https://www.linkedin.com/in/arnavc26?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bg9WRbTbhSJ2ZphPsFvU9SA%3D%3D)
 - 
 ---
 
