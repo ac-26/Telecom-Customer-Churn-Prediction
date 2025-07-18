@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-# Page configuration
 st.set_page_config(
     page_title="Telco Churn Predictor",
     page_icon="📞",
@@ -10,7 +9,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS
 st.markdown("""
 <style>
     .main {padding-top: 3rem;}
@@ -33,7 +31,7 @@ st.markdown("""
 
 # Title
 st.title("🔮 Telco Customer Churn Predictor")
-st.markdown("### Predict customer churn probability and get actionable retention insights")
+st.markdown("### Predict if a customer will churn or not")
 
 # Sidebar - Inputs
 with st.sidebar:
@@ -89,9 +87,8 @@ with st.sidebar:
     total_charges = monthly_charges * max(tenure, 1)
     st.info(f"Total Charges: ${total_charges:.2f}")
 
-# Main Prediction Logic
+
 if st.button("🎯 Predict Churn", use_container_width=True):
-    # Prepare input
     input_data = pd.DataFrame({
         'gender': [gender],
         'SeniorCitizen': [1 if senior_citizen == "Yes" else 0],
@@ -120,7 +117,7 @@ if st.button("🎯 Predict Churn", use_container_width=True):
                   'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies']
     input_data['NumAddOnServices'] = (input_data[addon_cols] == 'Yes').sum(axis=1)
 
-    # Churn risk score (fake model logic)
+
     risk_score = 0.3
     if contract == "Month-to-month":
         risk_score += 0.25
@@ -140,7 +137,7 @@ if st.button("🎯 Predict Churn", use_container_width=True):
 
     risk_score = max(0, min(1, risk_score))
 
-    # Risk level
+
     if risk_score < 0.25:
         risk_level = "Low Risk"
         risk_color = "green"
@@ -158,7 +155,7 @@ if st.button("🎯 Predict Churn", use_container_width=True):
         risk_color = "darkred"
         risk_icon = "🆘"
 
-    # Show result only
+
     st.markdown(f"""
     <div style='text-align: center; padding: 100px 20px; background-color: #f8f9fa; border-radius: 12px;'>
         <h2 style='color: {risk_color}; font-size: 40px;'>{risk_icon} {risk_level}</h2>
