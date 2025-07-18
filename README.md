@@ -1,16 +1,16 @@
-# Telco Customer Churn Prediction
+# Telecom Customer Churn Prediction
 
-A comprehensive machine learning project to predict customer churn in the telecommunications industry using advanced data science techniques and ensemble modeling approaches.
+A comprehensive data science project to predict customer churn in the telecommunications industry using advanced data science techniques and ensemble modeling approaches.
 
 ## 📊 Project Overview
 
 Customer churn is a critical business metric for telecommunications companies. This project implements an end-to-end machine learning pipeline to predict which customers are likely to discontinue their services, enabling proactive retention strategies and significant cost savings.
 
 ### Key Objectives
-- Analyze customer behavior patterns and identify churn indicators
+- Analyze customer behavior patterns and identify key churn indicators
 - Develop robust predictive models with high accuracy and reliability
-- Provide actionable insights for customer retention strategies
 - Implement a scalable ML pipeline for production deployment
+- Provide various business insights
 
 ## 🗂️ Dataset Information
 
@@ -45,6 +45,8 @@ The dataset contains **7,043 customer records** with **21 features** covering:
 
 ## 🔍 Methodology
 
+## **Note: I tried various algorithms during my various iterations, and i finalised ensembale learning using voting classifer i combined various best performing algorithms together which gave me the best ROC_AUC score -> 84.4%.**
+
 ### 1. Exploratory Data Analysis
 - **Data Quality Assessment:** Missing values, duplicates, data types validation
 - **Statistical Summary:** Distribution analysis, correlation matrix, outlier detection
@@ -67,7 +69,7 @@ The dataset contains **7,043 customer records** with **21 features** covering:
 - **Baseline Models:** Logistic Regression, Decision Trees for benchmarking
 - **Advanced Algorithms:** Random Forest, Gradient Boosting, XGBoost, LightGBM
 - **Ensemble Methods:** Voting classifiers, stacking, and advanced blending techniques
-- **Hyperparameter Optimization:** GridSearchCV, RandomizedSearchCV, and Bayesian optimization
+- **Hyperparameter Optimization:** RandomizedSearchCV
 
 ### 5. Model Evaluation
 - **Comprehensive Metrics:** Accuracy, Precision, Recall, F1-Score, ROC-AUC
@@ -75,21 +77,17 @@ The dataset contains **7,043 customer records** with **21 features** covering:
 - **Business Metrics:** Cost-benefit analysis, customer lifetime value impact assessment
 - **Model Comparison:** Statistical significance testing and performance benchmarking
 
-### 6. Model Interpretation
-- **Feature Importance:** SHAP values, permutation importance, gain-based importance
-- **Local Explanations:** LIME for individual prediction interpretability
-- **Global Insights:** Partial dependence plots, feature interaction analysis
-- **Business Translation:** Converting model insights into actionable business recommendations
-
 ## 📈 Results & Performance
 
 ### Model Performance Metrics
-- **Best Model:** Ensemble (Random Forest + XGBoost + LightGBM)
-- **Accuracy:** 84.2%
-- **Precision:** 82.7%
-- **Recall:** 79.3%
-- **F1-Score:** 80.9%
-- **ROC-AUC:** **0.892** ⭐ (Excellent discrimination capability)
+- **Best Model:** Ensemble Learning Voting Classifier (Random Forest + XGBoost + LightGBM)
+- **ROC-AUC:** **0.8412** ⭐ 
+- **Accuracy:** 76.5%
+- **Precision:** 55.5%
+- **Recall:** 75.3%
+- **F1-Score:** 62.5%
+
+  ## **Note: I observed a very clear trade off between precision recall and accuracy and roc-auc, if i tried increasing one the other would sigificantly decrease, hence i went with the best model and trade off**
 
 ### Cross-Validation Results
 - **Mean ROC-AUC:** 0.889 ± 0.012 (highly consistent performance)
@@ -140,44 +138,16 @@ The dataset contains **7,043 customer records** with **21 features** covering:
 
 ## 🚀 Deployment
 
-### API Deployment
-```bash
-# Start the prediction API
-python deployment/app.py
+## **As taught during our assignments and training i have publicly deployed my full model on streamlit. Please do access it and check it out.**
+[Streamlit Publicly Deployed APP](https://arnavchopra-ct-csi-ds-4264-telecom-churn.streamlit.app/)
 
-# Make predictions
-curl -X POST http://localhost:5000/predict \
-  -H "Content-Type: application/json" \
-  -d '{"tenure": 12, "MonthlyCharges": 75.5, "Contract": "Month-to-month"}'
-```
-
-### Docker Deployment
-```bash
-# Build and run container
-docker build -t telco-churn-api .
-docker run -p 5000:5000 telco-churn-api
-```
 
 ### Production Monitoring
 - **Performance Tracking:** Automated monitoring of model accuracy and ROC-AUC
 - **Data Drift Detection:** Statistical tests for feature distribution changes
 - **Retraining Pipeline:** Automated model updates when performance degrades
 - **Business Metrics Dashboard:** Real-time churn rate and retention cost tracking
-
-## 🧪 Testing
-
-```bash
-# Run comprehensive test suite
-python -m pytest tests/ -v
-
-# Run specific test modules
-python -m pytest tests/test_data_processing.py -v
-python -m pytest tests/test_models.py -v
-python -m pytest tests/test_api.py -v
-
-# Generate coverage report
-python -m pytest tests/ --cov=src --cov-report=html
-```
+  
 
 ## 📋 Requirements
 
@@ -210,35 +180,22 @@ pytest>=6.2.0
 3. **Service Innovation:** Invest in features that strongly correlate with customer retention
 4. **Cross-selling Optimization:** Leverage churn insights to improve product bundling strategies
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 👥 Author
-
-- **Your Name** - *Data Scientist* - [YourGitHub](https://github.com/yourusername)
+## This project was taken under solely by me starting from basic data preprocessing to full model deployment
+- **Arnav Chopra** - *Data Scientist* - [My GitHub](https://github.com/ac-26?tab=repositories)
 
 ## 🙏 Acknowledgments
 
 - Dataset provided by IBM Watson Analytics
-- Inspiration from telecommunications industry best practices
-- Open-source machine learning community contributions
+- Project done under Celebal Technologies during Celebal Summer Internship Programme 2025
 
+  
 ## 📞 Contact
 
 For questions, collaboration, or business inquiries:
-- **Email:** your.email@example.com
-- **LinkedIn:** [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
-- **Project Repository:** [GitHub Link](https://github.com/yourusername/telco-customer-churn)
-
+- **Email:** arnavchopra2607@gmail.com
+- **LinkedIn:** [My LinkedIn](linkedin.com/in/arnavc26)
+- 
 ---
 
 *This project demonstrates end-to-end machine learning expertise with real-world business applications, achieving excellent model performance (ROC-AUC: 0.892) and delivering measurable business value through predictive customer retention strategies.*
