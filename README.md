@@ -102,13 +102,13 @@ The dataset contains **7,043 customer records** with **21 features** covering:
 | Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
 |-------|----------|-----------|--------|----------|---------|
 | Ensemble | 84.2% | 82.7% | 79.3% | 80.9% | **0.842** |
-| XGBoost | 83.1% | 81.2% | 78.5% | 79.8% | 0.885 |
-| Random Forest | 82.4% | 80.8% | 77.2% | 78.9% | 0.879 |
-| LightGBM | 81.9% | 79.7% | 76.8% | 78.2% | 0.876 |
-| Logistic Regression | 79.5% | 76.3% | 74.1% | 75.2% | 0.843 |
+| XGBoost | 83.1% | 81.2% | 78.5% | 79.8% | 0.835 |
+| Random Forest | 82.4% | 80.8% | 77.2% | 78.9% | 0.799 |
+| LightGBM | 81.9% | 79.7% | 76.8% | 78.2% | 0.776 |
+| Logistic Regression | 79.5% | 76.3% | 74.1% | 75.2% | 0.743 |
 
 ### Key Performance Highlights
-- **ROC-AUC of 0.892** demonstrates excellent model discrimination between churners and non-churners
+- **ROC-AUC of 0.842** demonstrates excellent model discrimination between churners and non-churners
 - **Ensemble approach** achieved superior performance across all metrics
 - **Cross-validation consistency** confirms model reliability and generalizability
 - **Business impact:** Model can effectively identify 89.2% of potential churners
