@@ -111,7 +111,11 @@ The dataset contains **7,043 customer records** with **21 features** covering:
 - **ROC-AUC of 0.842** demonstrates excellent model discrimination between churners and non-churners
 - **Ensemble approach** achieved superior performance across all metrics
 - **Cross-validation consistency** confirms model reliability and generalizability
-- **Business impact:** Model can effectively identify 89.2% of potential churners
+- **Business impact:** Model can effectively identify 84.2% of potential churners
+
+### Confusion Matrix
+
+![Logo](download.png)
 
 ## 🔑 Key Insights & Findings
 
@@ -196,4 +200,3 @@ For questions, collaboration, or business inquiries:
 - 
 ---
 
-*This project demonstrates end-to-end machine learning expertise with real-world business applications, achieving excellent model performance (ROC-AUC: 0.892) and delivering measurable business value through predictive customer retention strategies.*
